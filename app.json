@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "Lagos State Residents Registration Agency",
+    "slug": "lasrra_mobile",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "splash": {
+      "image": "./assets/images/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#C50E11",
+      "height": "200",
+      "width": 200
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "description": "The need to integrate the residents of Lagos state into e-government initiatives to enable the services provided by the government to be fully utilized and also provide an accurate picture for government policy and planning was the brain behind the creation of LASRRA."
+  }
+}
