@@ -55,13 +55,13 @@ const About = ( { navigation } ) => {
               Society has become more mobile and the information held
               electronically about persons and services by government agencies
               and other bodies have substantially increased. There is a growing
-              need to integrate the residents of Kastina State into e-government
+              need to integrate the residents of Katsina State into e-government
               initiatives to enable the services provided by government to be
               fully utilised and also provide an accurate picture for government
               policy and planning.
             </Paragraph>
             <Paragraph>
-              The Kastina State Residents Registration Agency Bill was passed and
+              The Katsina State Residents Registration Agency Bill was passed and
               signed into law on the 27th of June 2011.
             </Paragraph>
 
@@ -69,7 +69,7 @@ const About = ( { navigation } ) => {
               The law established LASRRA with the following functions:
             </Paragraph>
             <Paragraph>
-              {`\u25CF`} To create a reliable database of all residents in Kastina
+              {`\u25CF`} To create a reliable database of all residents in Katsina
               State.
             </Paragraph>
             <Paragraph>
@@ -91,7 +91,7 @@ const About = ( { navigation } ) => {
               facilities provided by the State.
             </Paragraph>
             <Paragraph>
-              The Kastina State Residents Registration initiative has the
+              The Katsina State Residents Registration initiative has the
               potential to address key challenges facing e-government and other
               initiatives. Various e-government initiatives have been enabled to
               collect electronic data and each operates autonomous of each

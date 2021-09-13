@@ -9,30 +9,30 @@ import CustomButton from "../components/customButton";
 import SectionTitle from "./sectionTitle";
 import { Input, Label } from "native-base";
 
-const detailsSchema = yup.object({
+const detailsSchema = yup.object( {
   dob: yup
-    .string("Date of Birth must be in letters.")
-    .min(3, "Date of Birth must more than 3 characters.")
-    .required("Date of Birth is required."),
+    .string( "Date of Birth must be in letters." )
+    .min( 3, "Date of Birth must more than 3 characters." )
+    .required( "Date of Birth is required." ),
   address: yup
-    .string("Address must be in letters.")
-    .min(3, "Address must more than 3 characters.")
-    .required("Address is required."),
+    .string( "Address must be in letters." )
+    .min( 3, "Address must more than 3 characters." )
+    .required( "Address is required." ),
   nameOfFather: yup
-    .string("Father's Name must be in letters.")
-    .min(3, "Father's Name must more than 3 characters.")
-    .required("Father's Name is required."),
+    .string( "Father's Name must be in letters." )
+    .min( 3, "Father's Name must more than 3 characters." )
+    .required( "Father's Name is required." ),
   nameOfMother: yup
-    .string("Mother's Name must be in letters.")
-    .min(4, "Mother's Name must more than 4 characters.")
-    .required("Mother's Name is required."),
+    .string( "Mother's Name must be in letters." )
+    .min( 4, "Mother's Name must more than 4 characters." )
+    .required( "Mother's Name is required." ),
   lga: yup
-    .string("Local Govt. must be in letters.")
-    .min(2, "Local Govt. Name must more than 2 characters.")
-    .required("Local Govt. Name is required.")
-});
+    .string( "Local Govt. must be in letters." )
+    .min( 2, "Local Govt. Name must more than 2 characters." )
+    .required( "Local Govt. Name is required." )
+} );
 
-const BirthDetailsRegistration = ({ onSubmit, userDetails }) => {
+const BirthDetailsRegistration = ( { onSubmit, userDetails } ) => {
   const { dob, address, lga, nameOfFather, nameOfMother } = userDetails;
 
   return (
@@ -47,18 +47,18 @@ const BirthDetailsRegistration = ({ onSubmit, userDetails }) => {
           nameOfFather: nameOfFather ? nameOfFather : "",
           nameOfMother: nameOfMother ? nameOfMother : ""
         }}
-        onSubmit={(values) => {
-          onSubmit(values);
+        onSubmit={( values ) => {
+          onSubmit( values );
         }}
       >
-        {(props) => (
+        {( props ) => (
           <>
             <FormGroup>
               <Label style={globalStyles.label}>Date of Birth</Label>
-              
+
               <Input
                 style={globalStyles.formControl}
-                onChangeText={props.handleChange("dob")}
+                onChangeText={props.handleChange( "dob" )}
                 placeholder="e.g 31/02/1992"
                 value={props.values.dob}
               />
@@ -72,7 +72,7 @@ const BirthDetailsRegistration = ({ onSubmit, userDetails }) => {
               <Label style={globalStyles.label}>Address</Label>
               <Input
                 style={globalStyles.formControl}
-                onChangeText={props.handleChange("address")}
+                onChangeText={props.handleChange( "address" )}
                 multiline={true}
                 value={props.values.address}
               />
@@ -87,7 +87,7 @@ const BirthDetailsRegistration = ({ onSubmit, userDetails }) => {
               <Label style={globalStyles.label}>Father's Name</Label>
               <Input
                 style={globalStyles.formControl}
-                onChangeText={props.handleChange("nameOfFather")}
+                onChangeText={props.handleChange( "nameOfFather" )}
                 value={props.values.nameOfFather}
               />
 
@@ -101,7 +101,7 @@ const BirthDetailsRegistration = ({ onSubmit, userDetails }) => {
               <Label style={globalStyles.label}>Mother's Name</Label>
               <Input
                 style={globalStyles.formControl}
-                onChangeText={props.handleChange("nameOfMother")}
+                onChangeText={props.handleChange( "nameOfMother" )}
                 value={props.values.nameOfMother}
               />
 
@@ -120,51 +120,31 @@ const BirthDetailsRegistration = ({ onSubmit, userDetails }) => {
                 prompt={"Select"}
                 itemStyle={{ backgroundColor: "grey" }}
                 selectedValue={props.values.lga}
-                onValueChange={(itemValue) =>
-                  props.setFieldValue("lga", itemValue)
+                onValueChange={( itemValue ) =>
+                  props.setFieldValue( "lga", itemValue )
                 }
               >
                 <Picker.Item label="Select" value={null} key={0} />
-                <Picker.Item label="Agege" value="Agege" key={1} />
+                <Picker.Item label="Kankia" value="Kankia" key={1} />
                 <Picker.Item
-                  label="Ajeromi-Ifelodun"
-                  value="Ajeromi-Ifelodun"
+                  label="Batagarawa"
+                  value="Batagarawa"
                   key={2}
                 />
-                <Picker.Item label="Alimosho" value="Alimosho" key={3} />
+                <Picker.Item label="Katsina" value="Katsina" key={3} />
                 <Picker.Item
-                  label="Amuwo-odofin"
-                  value="Amuwo Odofin"
+                  label="Dutsin-ma"
+                  value="Dutsin-ma"
                   key={4}
                 />
-                <Picker.Item label="Apapa" value="Apapa" key={5} />
-                <Picker.Item label="Badagry" value="Badagry" key={6} />
-                <Picker.Item label="Epe" value="Epe" key={7} />
-                <Picker.Item label="Eti-osa" value="Eti Osa" key={8} />
-                <Picker.Item label="Ibeju-lekki" value="Ibeju Lekki" key={9} />
-                <Picker.Item label="Ifako-Ijaye" value="Ifako/Ijaye" key={10} />
-                <Picker.Item label="Ikeja" value="Ikeja" key={11} />
-                <Picker.Item label="Ikorudu" value="Ikorudu" key={12} />
-                <Picker.Item label="Kosofe" value="Kosofe" key={13} />
-                <Picker.Item
-                  label="Lagos Island"
-                  value="Lagos Island"
-                  key={14}
-                />
-                <Picker.Item
-                  label="Lagos Mainland"
-                  value="Lagos Mainland"
-                  key={15}
-                />
-                <Picker.Item label="Mushin" value="Mushin" key={16} />
-                <Picker.Item label="Ojo" value="Ojo" key={17} />
-                <Picker.Item
-                  label="Oshodi-Isolo"
-                  value="Oshodi/Isolo"
-                  key={18}
-                />
-                <Picker.Item label="Shomolu" value="Shomolu" key={19} />
-                <Picker.Item label="Surulere" value="Surulere" key={20} />
+                <Picker.Item label="Charanchi" value="Charanchi" key={5} />
+                <Picker.Item label="Mani" value="Mani" key={6} />
+                <Picker.Item label="Batsari" value="Batsari" key={7} />
+                <Picker.Item label="Faskari" value="Faskari" key={8} />
+                <Picker.Item label="Sabuwa" value="Sabuwa" key={9} />
+                <Picker.Item label="Kankara" value="Kankara" key={10} />
+                <Picker.Item label="Daura" value="Daura" key={11} />
+                <Picker.Item label="Rimi" value="Rimi" key={12} />
               </Picker>
 
               {props.errors.lga ? (

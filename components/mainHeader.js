@@ -33,7 +33,7 @@ const MainHeader = ( { navigation, noBack } ) => {
           source={require( "../assets/images/logo.png" )}
         />
         <Text style={styles.logoSubTitle}>
-          Kastina State Residence Registraion Agency
+          Katsina State Residence Registraion Agency
         </Text>
 
       </Body>

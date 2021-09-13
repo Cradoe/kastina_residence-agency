@@ -49,7 +49,7 @@ const Header = ( props ) => {
           <Image
             style={styles.headerImage}
             resizeMode="contain"
-            source={require( "../assets/images/LOGO-KASTINA.jpg" )}
+            source={require( "../assets/images/LOGO-Katsina.jpg" )}
           />
           <Text style={styles.logoSubTitle}>
             Lagos State Residence Registraion Agency

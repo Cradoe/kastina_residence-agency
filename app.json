@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Lagos State Residents Registration Agency",
-    "slug": "lasrra_mobile",
+    "name": "Katsina State Residents Registration Agency",
+    "slug": "kasrra_mobile",
     "platforms": [
       "ios",
       "android",
@@ -26,6 +26,9 @@
     "ios": {
       "supportsTablet": true
     },
-    "description": "The need to integrate the residents of Lagos state into e-government initiatives to enable the services provided by the government to be fully utilized and also provide an accurate picture for government policy and planning was the brain behind the creation of LASRRA."
+    "description": "The need to integrate the residents of Lagos state into e-government initiatives to enable the services provided by the government to be fully utilized and also provide an accurate picture for government policy and planning was the brain behind the creation of LASRRA.",
+    "android": {
+      "package": "com.cradoe.kasrra_mobile"
+    }
   }
 }

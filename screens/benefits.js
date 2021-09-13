@@ -85,10 +85,10 @@ const Benefits = ( { navigation } ) => {
               adequate staff numbers in facilities such as coaches and trainers.
             </Paragraph>
             <Paragraph>
-              {`\u25CF`}Aids the service delivery strategy of Kastina State.
+              {`\u25CF`}Aids the service delivery strategy of Katsina State.
             </Paragraph>
             <Paragraph>
-              {`\u25CF`}Ensures that the Agricultural Strategies of Kastina State
+              {`\u25CF`}Ensures that the Agricultural Strategies of Katsina State
               Government meet the needs and demands of the residents of the
               State.
             </Paragraph>

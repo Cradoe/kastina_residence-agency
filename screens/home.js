@@ -78,8 +78,8 @@ const Home = ( { route, navigation } ) => {
               />
               <HomeTouchableCard
                 bgColor="#eee"
-                title="Kastina News"
-                caption="Stay Updated with happenings in Kastina"
+                title="Katsina News"
+                caption="Stay Updated with happenings in Katsina"
                 imageSource={require( "../assets/images/lagos.png" )}
                 onPress={() =>
                   WebBrowser.openBrowserAsync(
@@ -90,7 +90,7 @@ const Home = ( { route, navigation } ) => {
               <HomeTouchableCard
                 bgColor="#dbdbad"
                 title="About Us"
-                caption="Find out what Kastina State Residents Registration Agency is."
+                caption="Find out what Katsina State Residents Registration Agency is."
                 imageSource={require( "../assets/images/icon.png" )}
                 onPress={() => navigation.navigate( "About" )}
               />

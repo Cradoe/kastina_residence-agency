@@ -13,7 +13,7 @@ const HomeBanner = () => {
             style={{ width: "100%", height: 108 }}
             source={require( "../assets/images/lagos.png" )}
           />
-          <Text style={styles.caption}>Kastina State Government</Text>
+          <Text style={styles.caption}>Katsina State Government</Text>
         </View>
       </View>
     </Card>
